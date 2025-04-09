@@ -6,7 +6,8 @@
 }
 
 body {
-    background-color: #f5f5f5;
+    background-image: url("https://wallpapers.com/images/hd/music-video-background-ldt2a36pzgm36lf1.jpg");
+
 }
 
 header {
@@ -14,7 +15,8 @@ header {
     justify-content: space-between;
     align-items: center;
     padding: 1rem 2rem;
-    background: linear-gradient(to right, #000000, #FFD700); /* Degradê de preto para amarelo */
+    background: linear-gradient(to right, #000000, #330ed6);
+    /* Degradê de preto para amarelo */
     color: white;
     position: sticky;
     top: 0;
@@ -46,7 +48,8 @@ header {
 }
 
 .menu ul li a:hover {
-    color: #27ae60; /* Cor verde ao passar o mouse */
+    color: #330ed6;
+    /* Cor verde ao passar o mouse */
 }
 
 main {
@@ -66,7 +69,7 @@ main {
     background-color: white;
     border-radius: 8px;
     padding: 1rem;
-    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
     transition: transform 0.3s ease;
 }
 
@@ -89,7 +92,7 @@ main {
 
 .price {
     font-size: 1.25rem;
-    color: #2ecc71;
+    color: #330ed6;
     font-weight: bold;
     margin-bottom: 0.5rem;
 }
@@ -101,7 +104,7 @@ main {
 }
 
 button {
-    background-color: #2ecc71;
+    background-color: #330ed6;
     color: white;
     border: none;
     padding: 0.5rem 1rem;
@@ -112,7 +115,7 @@ button {
 }
 
 button:hover {
-    background-color: #27ae60;
+    background-color: #403b49;
 }
 
 /* Modal Styles */
@@ -123,7 +126,7 @@ button:hover {
     left: 0;
     width: 100%;
     height: 100%;
-    background-color: rgba(0,0,0,0.5);
+    background-color: rgba(0, 0, 0, 0.5);
     z-index: 1000;
 }
 
@@ -162,7 +165,8 @@ quantity-selector input {
 
 /* Cart Panel */
 .cart-panel {
-    display: none; /* Oculto por padrão */
+    display: none;
+    /* Oculto por padrão */
     position: fixed;
     right: 0;
     top: 0;
@@ -207,7 +211,7 @@ footer {
     .products {
         grid-template-columns: 1fr;
     }
-    
+
     .cart-panel {
         width: 100%;
     }
@@ -266,7 +270,7 @@ footer {
 }
 
 .cart-actions button:last-child {
-    background-color: #007bff;
+    background-color: #330ed6;
     color: #fff;
 }
 

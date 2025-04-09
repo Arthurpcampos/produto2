@@ -1,0 +1,237 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Início - TrappSound Store</title>
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        .welcome-section {
+            text-align: center;
+            padding: 100px; /* Aumentei o padding para expandir a introdução */
+            background: linear-gradient(to right, #330ed6, #000000);
+            color: white;
+        }
+
+        .welcome-section h1 {
+            font-size: 48px; /* Aumentei o tamanho da fonte */
+            margin-bottom: 30px;
+        }
+
+        .welcome-section p {
+            font-size: 22px; /* Aumentei o tamanho da fonte */
+            line-height: 1.8;
+        }
+
+        .sample-products {
+            padding: 20px;
+            background-color: #f9f9f9;
+        }
+
+        .sample-products h2 {
+            text-align: center;
+            margin-bottom: 20px;
+            color: #333;
+        }
+
+        .product-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 20px;
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+
+        .product-card {
+            background-color: white;
+            border-radius: 8px;
+            padding: 1rem;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+            transition: transform 0.3s ease;
+        }
+
+        .product-card:hover {
+            transform: translateY(-5px);
+        }
+
+        .product-card img {
+            width: 100%;
+            height: 200px;
+            object-fit: cover;
+            border-radius: 4px;
+            margin-bottom: 1rem;
+            transition: transform 0.3s ease;
+            /* Adiciona transição suave */
+        }
+
+        .product-card img:hover {
+            transform: scale(1.1);
+            /* Aplica o efeito de zoom ao passar o mouse */
+        }
+
+        .product-card h3 {
+            margin-bottom: 0.5rem;
+            color: #333;
+        }
+
+        .product-card .price {
+            font-size: 1.25rem;
+            color: #330ed6;
+            font-weight: bold;
+            margin-bottom: 0.5rem;
+        }
+
+        .product-card .description {
+            color: #666;
+            margin-bottom: 1rem;
+            line-height: 1.4;
+        }
+
+        .product-card button {
+            background-color: #330ed6;
+            color: white;
+            border: none;
+            padding: 0.5rem 1rem;
+            border-radius: 4px;
+            cursor: pointer;
+            width: 100%;
+            transition: background-color 0.3s ease;
+        }
+
+        .product-card button:hover {
+            background-color: #403b49;
+        }
+
+        .video-section {
+            margin-top: 2rem;
+            text-align: center;
+        }
+
+        .video-section h2 {
+            font-size: 24px;
+            margin-bottom: 1rem;
+            color: #333;
+        }
+
+        .video-container {
+            position: relative;
+            width: 100%;
+            max-width: 800px;
+            margin: 0 auto;
+            overflow: hidden;
+            border-radius: 8px;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+        }
+
+        .video-images {
+            display: flex;
+            transition: transform 1s ease-in-out;
+            width: 100%;
+        }
+
+        .video-images img {
+            width: 100%;
+            flex-shrink: 0;
+            object-fit: cover;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <div class="logo">
+            <h1>TrappSound Store</h1>
+        </div>
+        <nav class="menu">
+            <ul>
+                <li><a href="inicio.html">Início</a></li>
+                <li><a href="index.html#products">Produtos</a></li>
+                <li><a href="sobre.html">Sobre</a></li>
+                <li><a href="contato.html">Contato</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section class="welcome-section">
+            <h1>Bem-vindo à TrappSound Store!</h1>
+            <p>Explore nossa loja e descubra os melhores produtos de áudio para transformar sua experiência sonora.</p>
+        </section>
+
+        <section class="sample-products">
+            <h2>Produtos em Destaque</h2>
+            <div class="product-grid">
+                <div class="product-card">
+                    <img src="https://m.media-amazon.com/images/I/51x0NvQUgbL.__AC_SX300_SY300_QL70_ML2_.jpg"
+                        alt="JBL Caixa de Som">
+                    <h3>JBL Caixa de Som</h3>
+                    <p class="price">R$2.179,00</p>
+                    <p class="description">Boombox 3, Bluetooth, À Prova D'água e Poeira - Preto</p>
+                    <button onclick="redirectToProducts()">Ver Mais</button>
+                </div>
+                <div class="product-card">
+                    <img src="https://encrypted-tbn1.gstatic.com/shopping?q=tbn:ANd9GcSCskB8dTS_0QPsIYhCXuEvPSC3dXhyNUe3vvCLrymGM0ksFUaK7Ide5pUnZkvjJXXF4hueB9970mNk5ilBk4NggVF2wGx1nM0V-sB0U3cuAYYPDcDU4ATh&usqp=CAE"
+                        alt="JBL Flip 6">
+                    <h3>JBL Flip 6</h3>
+                    <p class="price">R$ 575,10</p>
+                    <p class="description">Caixa de Som Portátil com Bluetooth e À Prova D'água – Preto</p>
+                    <button onclick="redirectToProducts()">Ver Mais</button>
+                </div>
+                <div class="product-card">
+                    <img src="https://encrypted-tbn1.gstatic.com/shopping?q=tbn:ANd9GcQcknOYQWoLAqK3WbZAfhko74SLL0agEYGGnYdaHlRW9oBYXFVahR77t_KlDMCtu_j-HERUf0-PdjF2GbcTIJwGazzPhvKR2kkt7RAndHeKdPTEsAejE0eq&usqp=CAE"
+                        alt="JBL PartyBox On-the-Go">
+                    <h3>JBL PartyBox On-the-Go</h3>
+                    <p class="price">R$ 1.619,10</p>
+                    <p class="description">Aumente o volume com 100 W RMS do poderoso JBL Pro Sound</p>
+                    <button onclick="redirectToProducts()">Ver Mais</button>
+                </div>
+            </div>
+        </section>
+        <br>
+        <br>
+        <br>
+        <!-- Adicionado mais espaço entre as seções -->
+        <div style="margin: 60px 0;"></div>
+
+        <section class="video-section">
+            <h2>Alguns dos nossos produtos</h2>
+            <div class="video-container">
+                <div class="video-images" id="video-images">
+                    <img src="https://encrypted-tbn1.gstatic.com/shopping?q=tbn:ANd9GcSCskB8dTS_0QPsIYhCXuEvPSC3dXhyNUe3vvCLrymGM0ksFUaK7Ide5pUnZkvjJXXF4hueB9970mNk5ilBk4NggVF2wGx1nM0V-sB0U3cuAYYPDcDU4ATh&usqp=CAE" alt="Produto 2">
+                    <img src="https://encrypted-tbn1.gstatic.com/shopping?q=tbn:ANd9GcQcknOYQWoLAqK3WbZAfhko74SLL0agEYGGnYdaHlRW9oBYXFVahR77t_KlDMCtu_j-HERUf0-PdjF2GbcTIJwGazzPhvKR2kkt7RAndHeKdPTEsAejE0eq&usqp=CAE" alt="Produto 3">
+                    <img src="https://encrypted-tbn1.gstatic.com/shopping?q=tbn:ANd9GcSKU_M6VjvDpv6Pa5vR7gj8Iv8ugdZO-IA-ys_vzrSg_jQPqp6_hjOmnFvJHwV3lL17bsaodJ6O5UQbE6TDqccfhDeO6GTUb2CISB0mO4I2UUvNicwKW62w&usqp=CAE" alt="Produto 4">
+                    <img src="https://a-static.mlcdn.com.br/800x560/speaker-philco-pbs45bt-extreme-bluetooth-v5-3-40w/britania/22240/080dbf750b6765a7095665fbf1804a6d.jpeg" alt="Produto 5">
+                </div>
+            </div>
+        </section>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+    </main>
+
+    <footer>
+        <p>&copy; 2025 TrappSound Store. Todos os direitos reservados.</p>
+    </footer>
+
+    <script>
+        function redirectToProducts() {
+            window.location.href = "index.html#products";
+        }
+
+        const videoImages = document.getElementById('video-images');
+        const totalImages = videoImages.children.length;
+        let currentVideoIndex = 0;
+
+        function playVideo() {
+            currentVideoIndex = (currentVideoIndex + 1) % totalImages;
+            videoImages.style.transform = `translateX(-${currentVideoIndex * 100}%)`;
+        }
+
+        setInterval(playVideo, 3000); // Troca de imagem a cada 3 segundos
+    </script>
+</body>
+
+</html>
