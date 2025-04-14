@@ -118,6 +118,19 @@ button:hover {
     background-color: #403b49;
 }
 
+button.remove-item {
+    background-color: red;
+    color: white;
+    border: none;
+    padding: 5px 10px;
+    cursor: pointer;
+    border-radius: 3px;
+}
+
+button.remove-item:hover {
+    background-color: darkred;
+}
+
 /* Modal Styles */
 .modal {
     display: none;
