@@ -49,6 +49,11 @@
         }
 
         .product-card img {
+            width: 100%;
+            height: auto;
+            object-fit: contain;
+            border-radius: 4px;
+            margin-bottom: 1rem;
             transition: transform 0.3s ease;
         }
 
@@ -148,107 +153,111 @@
     <main>
         <section class="products">
             <div class="product-card">
-                <img src="https://m.media-amazon.com/images/I/51x0NvQUgbL.__AC_SX300_SY300_QL70_ML2_.jpg"
+                <img src="https://encrypted-tbn2.gstatic.com/shopping?q=tbn:ANd9GcRgcJgpu3mCP9HN2Om-ayRRxKnO6_0yeI7vJa_1GD4eDTEZrjVM11L4Xnq56sH8g2WxlAsbJQ0MoUWOh-TNXedF_9oNyxU6pu4nitjfnbiY6Glfx15bhDoBhw&usqp=CAE"
                     alt="caixa de Som">
-                <h3>JBL Caixa de Som</h3>
-                <p class="price">R$2.179,00</p>
-                <p class="description">Boombox 3, Bluetooth, À Prova D'água e Poeira - Preto</p>
+                <h3>Caixa de Som Torre Double Pulse</h3>
+                <p class="price">R$1.799,00</p>
+                <p class="description">10 Pol. 1800W RMS BT LED</p>
                 <button
-                    onclick="openModal(1, 'JBL Caixa de Som', 2179.00, 'Boombox 3, Bluetooth, À Prova D água e Poeira - Preto', 'https://m.media-amazon.com/images/I/51x0NvQUgbL.__AC_SX300_SY300_QL70_ML2_.jpg')">Adicionar
+                    onclick="openModal(1, 'Caixa de Som Torre Double Pulse', 1799.00, '10 Pol. 1800W RMS BT LED', 'https://encrypted-tbn2.gstatic.com/shopping?q=tbn:ANd9GcR4GVuJeqL35MiRUOejkWjVEzIifSQ8K29dGFc6qBXH3sCVkMfr9M9b95L_nC68puA5E9YAzh5Li2BbiDCe4q_QWe9fRgBZP04GVjiM7oYWI0_btw89ybQW&usqp=CAE')">Adicionar
                     ao Carrinho</button>
             </div>
 
             <div class="product-card">
-                <img src="https://encrypted-tbn1.gstatic.com/shopping?q=tbn:ANd9GcSCskB8dTS_0QPsIYhCXuEvPSC3dXhyNUe3vvCLrymGM0ksFUaK7Ide5pUnZkvjJXXF4hueB9970mNk5ilBk4NggVF2wGx1nM0V-sB0U3cuAYYPDcDU4ATh&usqp=CAE"
+                <img src="https://encrypted-tbn2.gstatic.com/shopping?q=tbn:ANd9GcR4GVuJeqL35MiRUOejkWjVEzIifSQ8K29dGFc6qBXH3sCVkMfr9M9b95L_nC68puA5E9YAzh5Li2BbiDCe4q_QWe9fRgBZP04GVjiM7oYWI0_btw89ybQW&usqp=CAE"
                     alt="Urban E-Bike">
-                <h3>JBL Flip 6</h3>
-                <p class="price">R$ 575,10</p>
-                <p class="description">Caixa de Som Portátil com Bluetooth e À Prova D`água – Preto.</p>
+                <h3>Caixa de Som Pulse Flamebox</h3>
+                <p class="price">R$2.954,00</p>
+                <p class="description">DJ Torre Bluetooth LED TWS-5000w</p>
                 <button
-                    onclick="openModal(2, 'JBL Flip 6', 575.10, 'com Bluetooth e À Prova D`água – Preto', 'https://encrypted-tbn1.gstatic.com/shopping?q=tbn:ANd9GcSCskB8dTS_0QPsIYhCXuEvPSC3dXhyNUe3vvCLrymGM0ksFUaK7Ide5pUnZkvjJJXXF4hueB9970mNk5ilBk4NggVF2wGx1nM0V-sB0U3cuAYYPDcDU4ATh&usqp=CAE')">Adicionar
+                    onclick="openModal(2, 'Caixa de Som Pulse Flamebox', 2954.00, 'DJ Torre Bluetooth LED TWS-5000w', 'https://encrypted-tbn2.gstatic.com/shopping?q=tbn:ANd9GcR4GVuJeqL35MiRUOejkWjVEzIifSQ8K29dGFc6qBXH3sCVkMfr9M9b95L_nC68puA5E9YAzh5Li2BbiDCe4q_QWe9fRgBZP04GVjiM7oYWI0_btw89ybQW&usqp=CAE')">Adicionar
                     ao Carrinho</button>
             </div>
 
             <div class="product-card">
-                <img src="https://encrypted-tbn1.gstatic.com/shopping?q=tbn:ANd9GcQcknOYQWoLAqK3WbZAfhko74SLL0agEYGGnYdaHlRW9oBYXFVahR77t_KlDMCtu_j-HERUf0-PdjF2GbcTIJwGazzPhvKR2kkt7RAndHeKdPTEsAejE0eq&usqp=CAE"
-                    alt="Sport E-Bike">
-                <h3>JBL PartyBox On-the-Go</h3>
-                <p class="price">R$ 1.619,10</p>
-                <p class="description"> Aumente o volume com 100 W RMS do poderoso JBL Pro Sound. via Bluetooth, USB,
-                    AUX e TWS (True Wireless Stereo).</p>
-                <button
-                    onclick="openModal(3, 'JBL PartyBox On-the-Go', 1619.10, 'Aumente o volume com 100 W RMS do poderoso JBL Pro Sound. via Bluetooth, USB, AUX e TWS (True Wireless Stereo).', 'https://encrypted-tbn1.gstatic.com/shopping?q=tbn:ANd9GcQcknOYQWoLAqK3WbZAfhko74SLL0agEYGGnYdaHlRW9oBYXFVahR77t_KlDMCtu_j-HERUf0-PdjF2GbcTIJwGazzPhvKR2kkt7RAndHeKdPTEsAejE0eq&usqp=CAE')">Adicionar
-                    ao Carrinho</button>
-            </div>
-
-            <div class="product-card">
-                <img src="https://encrypted-tbn1.gstatic.com/shopping?q=tbn:ANd9GcSKU_M6VjvDpv6Pa5vR7gj8Iv8ugdZO-IA-ys_vzrSg_jQPqp6_hjOmnFvJHwV3lL17bsaodJ6O5UQbE6TDqccfhDeO6GTUb2CISB0mO4I2UUvNicwKW62w&usqp=CAE"
+                <img src="https://img.kalunga.com.br/fotosdeprodutos/282715z.jpg?_gl=1*7q26k9*_gcl_au*NTA3OTQ3MTA5LjE3NDQ2NTU1Nzg."
                     alt="">
-                <h3>JBL Caixa de Som Charge 5</h3>
-                <p class="price">R$ 885,00</p>
-                <p class="description">Bluetooth, À Prova D'água e Poeira - Azul</p>
+                <h3>Caixa de som Xplode 4 Pulse</h3>
+                <p class="price">R$999,90</p>
+                <p class="description">50w rms, Led, Bluetooth, Aux, USB, Preta,</p>
                 <button
-                    onclick="openModal(4, 'JBL, Caixa de Som, Charge 5', 885.00, 'Bluetooth, À Prova D água e Poeira - Azul', 'https://encrypted-tbn1.gstatic.com/shopping?q=tbn:ANd9GcSKU_M6VjvDpv6Pa5vR7gj8Iv8ugdZO-IA-ys_vzrSg_jQPqp6_hjOmnFvJHwV3lL17bsaodJ6O5UQbE6TDqccfhDeO6GTUb2CISB0mO4I2UUvNicwKW62w&usqp=CAE')">Adicionar
+                    onclick="openModal(3, 'Caixa de som Xplode 4 Pulse', 999.90, '50w rms, Led, Bluetooth, Aux, USB, Preta,', 'https://img.kalunga.com.br/fotosdeprodutos/282715z.jpg?_gl=1*7q26k9*_gcl_au*NTA3OTQ3MTA5LjE3NDQ2NTU1Nzg.')">Adicionar
                     ao Carrinho</button>
             </div>
 
             <div class="product-card">
-                <img src="https://a-static.mlcdn.com.br/800x560/speaker-philco-pbs45bt-extreme-bluetooth-v5-3-40w/britania/22240/080dbf750b6765a7095665fbf1804a6d.jpeg"
+                <img src="https://philco.vtexassets.com/arquivos/ids/254832-1200-1200?v=638731509494500000&width=1200&height=1200&aspect=true"
                     alt="">
-                <h3>Speaker Philco PBS45BT </h3>
-                <p class="price">R$ 227,91</p>
-                <p class="description">Extreme Bluetooth V5.3 40W</p>
+                <h3>Caixa de Som Britânia</h3>
+                <p class="price">R$339,90</p>
+                <p class="description">lash Lights Bluetooth V5.3 350W</p>
                 <button
-                    onclick="openModal(5, 'Speaker Philco PBS45BT ', 227.91, 'Extreme Bluetooth V5.3 40W', 'https://a-static.mlcdn.com.br/800x560/speaker-philco-pbs45bt-extreme-bluetooth-v5-3-40w/britania/22240/080dbf750b6765a7095665fbf1804a6d.jpeg')">Adicionar
+                    onclick="openModal(4, 'Caixa de Som Britânia', 339.90, 'lash Lights Bluetooth V5.3 350W', 'https://philco.vtexassets.com/arquivos/ids/254832-1200-1200?v=638731509494500000&width=1200&height=1200&aspect=true')">Adicionar
                     ao Carrinho</button>
             </div>
 
             <div class="product-card">
-                <img src="https://aiwa.vtexassets.com/arquivos/ids/155716-800-800?v=638241588432100000&width=800&height=800&aspect=true"
+                <img src="https://img.kalunga.com.br/fotosdeprodutos/145830z.jpg?_gl=1*u76pbe*_gcl_au*NTA3OTQ3MTA5LjE3NDQ2NTU1Nzg."
                     alt="">
-                <h3>Caixa de Som Speaker AIWA</h3>
-                <p class="price">R$ 476,90</p>
-                <p class="description">20W BT 15H IP65 RGB USB TWS</p>
+                <h3>Caixa de som 2.1 Multi </h3>
+                <p class="price">R$100,20</p>
+                <p class="description">com subwoofer, 14w rms, USB, P2, Preto,</p>
                 <button
-                    onclick="openModal(6, 'Caixa de Som Speaker AIWA', 476.90, '20W BT 15H IP65 RGB USB TWS.', 'https://aiwa.vtexassets.com/arquivos/ids/155716-800-800?v=638241588432100000&width=800&height=800&aspect=true')">Adicionar
+                    onclick="openModal(5, 'Caixa de som 2.1 Multi', 100.20, 'com subwoofer, 14w rms, USB, P2, Preto,', 'https://img.kalunga.com.br/fotosdeprodutos/145830z.jpg?_gl=1*u76pbe*_gcl_au*NTA3OTQ3MTA5LjE3NDQ2NTU1Nzg.')">Adicionar
                     ao Carrinho</button>
             </div>
 
             <div class="product-card">
-                <div
-                    style="width: 100%; height: 200px; background-color: #f0f0f0; display: flex; align-items: center; justify-content: center; border-radius: 4px;">
-                    <img src="https://images5.kabum.com.br/produtos/fotos/177805/soundbar-gamer-redragon-adiemus-3w-rms-rgb-usb-150hz-20khz-botao-touch-preto-gs560_1626364410_g.jpg"
+                <img src="https://gbarbosa.vtexassets.com/arquivos/ids/234217-1200-auto?v=638361017284470000&width=1200&height=auto&aspect=true"
+                    alt="">
+                <h3>Caixa Amplificada Amvox Partyvox</h3>
+                <p class="price">R$ 1.597,91</p>
+                <p class="description">Prime Bluetooth 2000W Preta</p>
+                <button
+                    onclick="openModal(6, 'Caixa Amplificada Amvox Partyvox', 1597.91, 'Prime Bluetooth 2000W Preta', 'https://gbarbosa.vtexassets.com/arquivos/ids/234217-1200-auto?v=638361017284470000&width=1200&height=auto&aspect=true')">Adicionar
+                    ao Carrinho</button>
+            </div>
+
+            <div class="product-card">
+                <div>
+                    <img src="https://mirandacomputacao.jetassets.com.br/produto/44654-principal.png"
                         alt="">
                 </div>
-                <h3>Soundbar Gamer Redragon Adiemus</h3>
-                <p class="price">R$ 189,99</p>
-                <p class="description">6W RMS, RGB, USB, 150Hz/20KHz, Botão Touch, Preto - GS560</p>
+                <h3>Caixa Acústica Gamer  Redragon Stentor</h3>
+                <p class="price">R$149,00</p>
+                <p class="description">5W, Conexão 3.5mm, GS500</p>
                 <button
-                    onclick="openModal(7, 'Soundbar Gamer Redragon Adiemus', 189.99, '6W RMS, RGB, USB, 150Hz/20KHz, Botão Touch, Preto - GS560', 'https://images5.kabum.com.br/produtos/fotos/177805/soundbar-gamer-redragon-adiemus-3w-rms-rgb-usb-150hz-20khz-botao-touch-preto-gs560_1626364410_g.jpg')">Adicionar
+                    onclick="openModal(7, 'Caixa Acústica Gamer  Redragon Stentor', 149.00, '5W, Conexão 3.5mm, GS500', 'https://mirandacomputacao.jetassets.com.br/produto/44654-principal.png')">Adicionar
                     ao Carrinho</button>
             </div>
             <div class="product-card">
-                <div
-                    style="width: 100%; height: 200px; background-color: #f0f0f0; display: flex; align-items: center; justify-content: center; border-radius: 4px;">
-                    <img src="https://http2.mlstatic.com/D_NQ_NP_667761-MLA82810451131_032025-O.webp" alt="">
+                <div>
+                    <br>
+                    <br>
+                    <br>
+                    <br>
+                    <img src="https://http2.mlstatic.com/D_NQ_NP_633790-MLA81772871630_012025-O.webp" alt="">
                 </div>
-                <h3>Caixa De Som Gamer Soundbar</h3>
-                <p class="price">R$ 133,00</p>
-                <p class="description">50w Bluetooth Led Pc Smart Tv Cor Preto 127/220v</p>
+                <br>
+                <br>
+                <br>
+                <br>
+                <h3>Caixa de Som Alto Falante By Alok</h3>
+                <p class="price">R$1.461,00</p>
+                <p class="description">Bluetooth Waaw Hyperboom 1000 Cor Preto</p>
                 <button
-                    onclick="openModal(8, 'Caixa De Som Gamer Soundbar', 133.00, '50w Bluetooth Led Pc Smart Tv Cor Preto 127/220v', 'https://http2.mlstatic.com/D_NQ_NP_667761-MLA82810451131_032025-O.webp')">Adicionar
+                    onclick="openModal(8, 'Caixa de Som Alto Falante By Alok', 1461.00, 'Bluetooth Waaw Hyperboom 1000 Cor Preto', 'https://http2.mlstatic.com/D_NQ_NP_633790-MLA81772871630_012025-O.webp')">Adicionar
                     ao Carrinho</button>
             </div>
             <div class="product-card">
-                <div
-                    style="width: 100%; height: 200px; background-color: #f0f0f0; display: flex; align-items: center; justify-content: center; border-radius: 4px;">
-                    <img src="https://http2.mlstatic.com/D_NQ_NP_929538-MLC74075244970_012024-O.webp" alt="">
+                <div>
+                    <img src="https://api.store.vivo.com.br/medias/515Wx515H-22022218-ME100-preto-1-.jpg?context=bWFzdGVyfHByb2R1Y3RpbWFnZXN8MjUwMTV8aW1hZ2UvanBlZ3xhRFl5TDJobU9DODVNVE00T0RFMk1ESTBOakEyTHpVeE5WZDROVEUxU0Y4eU1qQXlNakl4T0Y5TlJURXdNQzF3Y21WMGIxOGdLREVwTG1wd1p3fGEwODczNGI0NzQxNzliMTE2Zjc1ZTYzN2E4ODFkMWI3ODYzMzBiNTZjZjNhNWMxOWQzOTk3YjA4YTcwZWQ2MGI" alt="">
                 </div>
-                <h3>Barra de som Pc axon</h3>
+                <h3>Caixa de Som Portátil Alok</h3>
                 <p class="price">R$ 179,80</p>
-                <p class="description">12w Gamer Led Rgb Trust Gxt620</p>
+                <p class="description">Bluetooth 00SB 12 Horas de Reprodução, Resistente à Água, Preto</p>
                 <button
-                    onclick="openModal(9, 'Barra de som Pc axon', 179.80, '12w Gamer Led Rgb Trust Gxt620 Axon', 'https://http2.mlstatic.com/D_NQ_NP_929538-MLC74075244970_012024-O.webp')">Adicionar
+                    onclick="openModal(9, 'Caixa de Som Portátil Alok', 179.80, 'Bluetooth 00SB 12 Horas de Reprodução, Resistente à Água, Preto', 'https://api.store.vivo.com.br/medias/515Wx515H-22022218-ME100-preto-1-.jpg?context=bWFzdGVyfHByb2R1Y3RpbWFnZXN8MjUwMTV8aW1hZ2UvanBlZ3xhRFl5TDJobU9DODVNVE00T0RFMk1ESTBOakEyTHpVeE5WZDROVEUxU0Y4eU1qQXlNakl4T0Y5TlJURXdNQzF3Y21WMGIxOGdLREVwTG1wd1p3fGEwODczNGI0NzQxNzliMTE2Zjc1ZTYzN2E4ODFkMWI3ODYzMzBiNTZjZjNhNWMxOWQzOTk3YjA4YTcwZWQ2MGI')">Adicionar
                     ao Carrinho</button>
             </div>
         </section>
@@ -258,7 +267,7 @@
 
             <div class="product-grid">
                 <div class="product-square">
-                    <button onclick="window.location.href='produtos2.html'">1</button>
+                    <button onclick="window.location.href='index.html'">1</button>
                 </div>
                 <div class="product-square">
                     <button onclick="window.location.href='produtos2.html'">2</button>
