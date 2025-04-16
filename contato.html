@@ -12,13 +12,22 @@
             flex-direction: column;
             align-items: center;
             gap: 30px;
-            margin-top: 200px; /* Ajusta a posição mais para baixo */
+            margin-top: 200px;
+        }
+
+        .contact-icons .icon-box {
+            background-color: white;
+            border-radius: 8px;
+            padding: 20px;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+            text-align: center;
+            width: 200px;
         }
 
         .contact-icons a {
             text-decoration: none;
             color: #800080;
-            font-size: 80px; /* Aumenta o tamanho dos ícones */
+            font-size: 80px;
             transition: transform 0.3s ease;
         }
 
@@ -27,10 +36,9 @@
         }
 
         .contact-icons p {
-            margin: 0;
+            margin: 10px 0 0;
             font-size: 18px;
             color: #333;
-            text-align: center;
         }
     </style>
 </head>
@@ -50,13 +58,13 @@
 
     <main>
         <section class="contact-icons">
-            <div>
+            <div class="icon-box">
                 <a href="https://www.instagram.com/07_porto/?locale=French&hl=en" target="_blank" aria-label="Instagram">
                     <i class="fab fa-instagram"></i>
                 </a>
                 <p>Entre em contato pelo Instagram</p>
             </div>
-            <div>
+            <div class="icon-box">
                 <a href="https://wa.me/1234567890" target="_blank" aria-label="WhatsApp">
                     <i class="fab fa-whatsapp"></i>
                 </a>

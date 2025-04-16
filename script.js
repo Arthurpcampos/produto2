@@ -68,6 +68,9 @@ function addToCart() {
     // Atualizar o carrinho na interface
     updateCartUI();
 
+    // Salvar o carrinho no localStorage
+    saveCartToLocalStorage();
+
     // Fechar o modal
     closeModal();
 
@@ -151,9 +154,25 @@ window.onclick = function (event) {
     }
 }
 
+// Salvar o carrinho no localStorage
+function saveCartToLocalStorage() {
+    localStorage.setItem('cart', JSON.stringify(cart));
+}
+
+// Carregar o carrinho do localStorage
+function loadCartFromLocalStorage() {
+    const savedCart = localStorage.getItem('cart');
+    if (savedCart) {
+        cart = JSON.parse(savedCart);
+        updateCartUI();
+        updateCartCount();
+    }
+}
+
 // Inicializar o carrinho ao carregar a página
 document.addEventListener('DOMContentLoaded', () => {
     updateCartDisplay();
+    loadCartFromLocalStorage();
 });
 
 function updateCartUI() {
@@ -188,6 +207,7 @@ function updateCartUI() {
             cart.splice(index, 1); // Remove o item do array
             updateCartUI(); // Atualiza o carrinho
             updateCartCount(); // Atualiza o contador
+            saveCartToLocalStorage(); // Salva o carrinho atualizado no localStorage
         };
 
         cartItem.appendChild(removeButton);
