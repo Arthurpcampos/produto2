@@ -17,7 +17,9 @@ function openModal(productId, productName, productPrice, productDescription, pro
 
 function closeModal() {
     document.getElementById('quantity-modal').style.display = 'none';
+    document.getElementById('quantity').value = 1; // Reseta a quantidade para 1
 }
+
 function proceedToPayment() {
     showToast('Redirecionando para a página de pagamento...');
     // Aqui você pode adicionar lógica para redirecionar para a página de pagamento real
@@ -26,7 +28,10 @@ function proceedToPayment() {
 
 function incrementQuantity() {
     const input = document.getElementById('quantity');
-    if (input.value < 10) {
+    if (!input.value || parseInt(input.value) <= 0) {
+        alert('Por favor, selecione uma quantidade válida para comprar o item.');
+        input.value = 1; // Define o valor padrão como 1
+    } else if (input.value < 1000) {
         input.value = parseInt(input.value) + 1;
     }
 }
@@ -40,10 +45,17 @@ function decrementQuantity() {
 
 // Funções do Carrinho
 function addToCart() {
+    const quantityInput = document.getElementById('quantity');
+    const productQuantity = parseInt(quantityInput.value, 10);
+
+    if (!productQuantity || productQuantity <= 0) {
+        alert('Por favor, selecione uma quantidade válida para adicionar o item ao carrinho!');
+        return; // Impede a execução do restante da função
+    }
+
     // Capturar os dados do modal
     const productName = document.getElementById('modal-product-name').textContent;
     const productPrice = parseFloat(document.getElementById('modal-product-price').textContent.replace(',', '.'));
-    const productQuantity = parseInt(document.getElementById('quantity').value, 10);
     const productImage = document.getElementById('modal-product-image').src;
 
     // Verificar se o produto já está no carrinho
