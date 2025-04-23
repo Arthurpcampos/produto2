@@ -29,7 +29,6 @@ function proceedToPayment() {
 function incrementQuantity() {
     const input = document.getElementById('quantity');
     if (!input.value || parseInt(input.value) <= 0) {
-        alert('Por favor, selecione uma quantidade válida para comprar o item.');
         input.value = 1; // Define o valor padrão como 1
     } else if (input.value < 1000) {
         input.value = parseInt(input.value) + 1;
@@ -46,10 +45,11 @@ function decrementQuantity() {
 // Funções do Carrinho
 function addToCart() {
     const quantityInput = document.getElementById('quantity');
-    const productQuantity = parseInt(quantityInput.value, 10);
+    let productQuantity = parseInt(quantityInput.value, 10);
 
+    // Verifica se a quantidade é inválida ou vazia
     if (!productQuantity || productQuantity <= 0) {
-        alert('Por favor, selecione uma quantidade válida para adicionar o item ao carrinho!');
+        alert('Por favor, insira um valor válido para adicionar ao carrinho!');
         return; // Impede a execução do restante da função
     }
 

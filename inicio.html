@@ -2,15 +2,18 @@
 <html lang="pt-BR">
 
 <head>
+    <!-- Configurações básicas da página -->
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Início - TrappSound Store</title>
+    <!-- Ícone do site -->
     <link rel="icon"
         href="https://sdmntprsouthcentralus.oaiusercontent.com/files/00000000-47cc-61f7-b857-7afcfcc305ce/raw?se=2025-04-16T20%3A19%3A02Z&sp=r&sv=2024-08-04&sr=b&scid=b5899517-cc99-5a93-bf4f-59ad479018a2&skoid=0abefe37-d2bd-4fcb-bc88-32bccbef6f7d&sktid=a48cca56-e6da-484e-a814-9c849652bcb3&skt=2025-04-15T23%3A00%3A41Z&ske=2025-04-16T23%3A00%3A41Z&sks=b&skv=2024-08-04&sig=n5Lfgy4/AfXdk8G%2BApgzYroUW8xp1KXuQ1Ri3FXkSIw%3D"
         type="image/x-icon">
-
+    <!-- Estilos da página -->
     <link rel="stylesheet" href="styles.css">
     <style>
+        /* Estilos personalizados para a página inicial */
         body {
             margin: 0;
             padding: 0;
@@ -185,6 +188,7 @@
 </head>
 
 <body>
+    <!-- Cabeçalho com logo e menu de navegação -->
     <header>
         <div class="logo">
             <h1>TrappSound Store</h1>
@@ -205,14 +209,17 @@
         <br>
         <br>
         <br>
+        <!-- Seção de boas-vindas -->
         <section class="welcome-section">
             <h1>Bem-vindo à TrappSound Store!</h1>
             <p>Explore nossa loja e descubra os melhores produtos de áudio para transformar sua experiência sonora.</p>
         </section>
 
+        <!-- Seção de produtos em destaque -->
         <section class="sample-products">
             <h2>Produtos em Destaque</h2>
             <div class="product-grid">
+                <!-- Card de produto 1 -->
                 <div class="product-card">
                     <img src="https://m.media-amazon.com/images/I/51x0NvQUgbL.__AC_SX300_SY300_QL70_ML2_.jpg"
                         alt="JBL Caixa de Som">
@@ -221,6 +228,7 @@
                     <p class="description">Boombox 3, Bluetooth, À Prova D'água e Poeira - Preto</p>
                     <button onclick="redirectToProducts()">Ver Mais</button>
                 </div>
+                <!-- Card de produto 2 -->
                 <div class="product-card">
                     <img src="https://encrypted-tbn1.gstatic.com/shopping?q=tbn:ANd9GcSCskB8dTS_0QPsIYhCXuEvPSC3dXhyNUe3vvCLrymGM0ksFUaK7Ide5pUnZkvjJXXF4hueB9970mNk5ilBk4NggVF2wGx1nM0V-sB0U3cuAYYPDcDU4ATh&usqp=CAE"
                         alt="JBL Flip 6">
@@ -229,6 +237,7 @@
                     <p class="description">Caixa de Som Portátil com Bluetooth e À Prova D'água – Preto</p>
                     <button onclick="redirectToProducts()">Ver Mais</button>
                 </div>
+                <!-- Card de produto 3 -->
                 <div class="product-card">
                     <img src="https://encrypted-tbn1.gstatic.com/shopping?q=tbn:ANd9GcQcknOYQWoLAqK3WbZAfhko74SLL0agEYGGnYdaHlRW9oBYXFVahR77t_KlDMCtu_j-HERUf0-PdjF2GbcTIJwGazzPhvKR2kkt7RAndHeKdPTEsAejE0eq&usqp=CAE"
                         alt="JBL PartyBox On-the-Go">
@@ -245,6 +254,7 @@
         <!-- Adicionado mais espaço entre as seções -->
         <div style="margin: 60px 0;"></div>
 
+        <!-- Seção de imagens de produtos -->
         <section class="video-section">
             <h2>Alguns dos nossos produtos</h2>
             <div class="video-container">
@@ -267,15 +277,18 @@
         <br>
     </main>
 
+    <!-- Rodapé da página -->
     <footer>
         <p>&copy; 2025 TrappSound Store. Todos os direitos reservados.</p>
     </footer>
 
     <script>
+        // Função para redirecionar para a seção de produtos
         function redirectToProducts() {
             window.location.href = "index.html#products";
         }
 
+        // Função para alternar as imagens na seção de vídeos
         const videoImages = document.getElementById('video-images');
         const totalImages = videoImages.children.length;
         let currentVideoIndex = 0;
